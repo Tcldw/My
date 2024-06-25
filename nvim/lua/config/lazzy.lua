@@ -10,10 +10,6 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     lazypath,
   })
 end
+-- 导入全部插件 --
 vim.opt.rtp:prepend(lazypath)
-require("lazy").setup({
-	{	"RRethy/nvim-base16", -- base16 主题 --
-		lazy = ture,
-	},
-})
-
+require("lazy").setup("plugins")

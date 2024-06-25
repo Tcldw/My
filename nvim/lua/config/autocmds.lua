@@ -1,4 +1,4 @@
--- 复制后高亮
+-- 复制后高亮 --
 vim.api.nvim_create_autocmd({"TextYankPost"},{
 	pattern = { "*" },
 	callback = function()
